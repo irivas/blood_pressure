@@ -1,4 +1,4 @@
-require './blood_pressure'
+require './lib/blood_pressure'
 
 describe BloodPressureLogger do
   describe '#check_argvs' do
