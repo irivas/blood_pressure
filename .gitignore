@@ -11,6 +11,7 @@
 
 ## Environment normalization:
 /.bundle/
+/.bundle
 /vendor
 /lib/bundler/man/
 

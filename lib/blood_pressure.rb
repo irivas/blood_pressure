@@ -13,15 +13,20 @@ class BloodPressureLogger
   end
 
   def print_log
-    puts "Systolic value added: #{@systolic}"
-    puts "Diastolic value added: #{@diastolic}"
-    puts "Pulse value added: #{@pulse}"
+    print_meassure('Systolic', @systolic)
+    print_meassure('Diastolic', @diastolic)
+    print_meassure('Pulse', @pulse)
   end
 
   def save_in_file
     CSV.open('pressure_measures.csv', 'a') do |csv|
       csv << ["#{DateTime.now}", "#{@systolic}", "#{@diastolic}", "#{@pulse}"]
     end
+  end
+
+  private
+  def print_meassure(type, value)
+    puts "#{type} value added: #{value}"
   end
 end
 
