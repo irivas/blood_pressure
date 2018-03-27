@@ -1,7 +1,7 @@
-class BloodPressureLogger
-  require 'date'
-  require 'csv'
+require 'date'
+require 'csv'
 
+class BloodPressureLogger
   def initialize(systolic, diastolic, pulse)
     @systolic = systolic
     @diastolic = diastolic
