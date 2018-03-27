@@ -1,0 +1,14 @@
+current directory: /Users/israel.rivas/repos/my_repos/Pruebas/blood_pressure/vendor/bundle/gems/json-2.1.0/ext/json
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -r ./siteconf20180327-72784-ttqu4u.rb extconf.rb
+creating Makefile
+
+current directory: /Users/israel.rivas/repos/my_repos/Pruebas/blood_pressure/vendor/bundle/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/israel.rivas/repos/my_repos/Pruebas/blood_pressure/vendor/bundle/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/israel.rivas/repos/my_repos/Pruebas/blood_pressure/vendor/bundle/gems/json-2.1.0/ext/json
+make "DESTDIR=" install
+installing default libraries
