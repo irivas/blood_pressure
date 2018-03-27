@@ -9,9 +9,11 @@ describe BloodPressureLogger do
     
     context 'when argvs are less than three' do
       subject { described_class.new(systolic, diastolic) }
-
+      
+      
       it 'shows argument missing error' do
-        expect{subject.check_argvs}.to raise_error('Argument missing!')
+        expect{subject.check_argvs}.to raise_error(ArgumentError)
+        # expect(error.message).to eq('Argument missing!')
       end
     end
   end
