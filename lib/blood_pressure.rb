@@ -1,6 +1,7 @@
 require 'date'
 require 'csv'
 
+# BloodPressureLogger class
 class BloodPressureLogger
   def initialize(systolic, diastolic, pulse)
     @systolic = systolic
@@ -9,7 +10,7 @@ class BloodPressureLogger
   end
 
   def check_argvs
-    fail 'Argument missing!' unless ARGV.count == 3
+    raise 'Argument missing!' unless ARGV.count == 3
   end
 
   def print_log
@@ -20,11 +21,12 @@ class BloodPressureLogger
 
   def save_in_file
     CSV.open('pressure_measures.csv', 'a') do |csv|
-      csv << ["#{DateTime.now}", "#{@systolic}", "#{@diastolic}", "#{@pulse}"]
+      csv << [DateTime.now, @systolic, @diastolic, @pulse]
     end
   end
 
   private
+
   def print_meassure(type, value)
     puts "#{type} value added: #{value}"
   end
